@@ -18,10 +18,10 @@ namespace AkademikADOApp
 
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); // Inisialisasi komponen form
         }
 
-        private void btnConnect_Click(object sender, EventArgs e)
+        private void btnConnect_Click(object sender, EventArgs e) // Event handler untuk tombol Connect
         {
             try
             {
@@ -37,11 +37,11 @@ namespace AkademikADOApp
             }
         }
 
-        private void btnDisconnect_Click(object sender, EventArgs e)
+        private void btnDisconnect_Click(object sender, EventArgs e) // Event handler untuk tombol Disconnect
         {
             try
             {
-                if (conn != null && conn.State == ConnectionState.Open)
+                if (conn != null && conn.State == ConnectionState.Open) // Cek apakah koneksi sudah terbuka
                 {
                     conn.Close();
                     lblStatus.Text = "Status : Database Disconnected";
