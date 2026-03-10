@@ -31,9 +31,9 @@ namespace AkademikADOApp // Namespace untuk aplikasi Akademik ADO.NET
                 lblStatus.Text = "Status : Database Connected"; // Update label status untuk menunjukkan bahwa koneksi berhasil
                 MessageBox.Show("Koneksi ke database berhasil!"); // Tampilkan pesan bahwa koneksi berhasil
             }
-            catch (Exception ex)
+            catch (Exception ex) // Tangkap dan tampilkan pesan kesalahan jika koneksi gagal
             {
-                MessageBox.Show("Koneksi gagal : " + ex.Message);
+                MessageBox.Show("Koneksi gagal : " + ex.Message); // Tampilkan pesan kesalahan jika koneksi gagal
             }
         }
 
