@@ -28,8 +28,8 @@ namespace AkademikADOApp // Namespace untuk aplikasi Akademik ADO.NET
                 conn = new SqlConnection(connString); // Membuat objek SqlConnection dengan connection string yang telah ditentukan
                 conn.Open();
 
-                lblStatus.Text = "Status : Database Connected";
-                MessageBox.Show("Koneksi ke database berhasil!");
+                lblStatus.Text = "Status : Database Connected"; // Update label status untuk menunjukkan bahwa koneksi berhasil
+                MessageBox.Show("Koneksi ke database berhasil!"); // Tampilkan pesan bahwa koneksi berhasil
             }
             catch (Exception ex)
             {
