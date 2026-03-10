@@ -47,9 +47,9 @@ namespace AkademikADOApp // Namespace untuk aplikasi Akademik ADO.NET
                     lblStatus.Text = "Status : Database Disconnected"; // Update label status untuk menunjukkan bahwa koneksi telah ditutup
                     MessageBox.Show("Koneksi ke database ditutup!"); // Tampilkan pesan bahwa koneksi telah ditutup
                 }
-                else
+                else 
                 {
-                    MessageBox.Show("Database belum terkoneksi.");
+                    MessageBox.Show("Database belum terkoneksi."); // Tampilkan pesan bahwa koneksi belum terbuka jika mencoba menutup koneksi yang belum terbuka
                 }
             }
             catch (Exception ex)
