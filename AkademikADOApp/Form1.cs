@@ -52,7 +52,7 @@ namespace AkademikADOApp // Namespace untuk aplikasi Akademik ADO.NET
                     MessageBox.Show("Database belum terkoneksi."); // Tampilkan pesan bahwa koneksi belum terbuka jika mencoba menutup koneksi yang belum terbuka
                 }
             }
-            catch (Exception ex)
+            catch (Exception ex) // Tangkap dan tampilkan pesan kesalahan jika terjadi masalah saat menutup koneksi
             {
                 MessageBox.Show("Gagal menutup koneksi : " + ex.Message);
             }
