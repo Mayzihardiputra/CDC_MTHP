@@ -54,7 +54,7 @@ namespace AkademikADOApp // Namespace untuk aplikasi Akademik ADO.NET
             }
             catch (Exception ex) // Tangkap dan tampilkan pesan kesalahan jika terjadi masalah saat menutup koneksi
             {
-                MessageBox.Show("Gagal menutup koneksi : " + ex.Message);
+                MessageBox.Show("Gagal menutup koneksi : " + ex.Message); // Tampilkan pesan kesalahan jika terjadi masalah saat menutup koneksi
             }
         }
     }
